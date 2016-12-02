@@ -6,11 +6,14 @@ public class Player : MonoBehaviour
   public float speed = 2f;
 	public Sprite stop = Resources.Load("Sadrocket", typeof(Sprite)) as Sprite;
 	public Sprite start = Resources.Load("churchillrocket", typeof(Sprite)) as Sprite;
-  void Update()
+    public GameObject bullet;
+    void Update()
     {
 		SpriteRenderer spriteRenderer = gameObject.GetComponent<Renderer>() as SpriteRenderer;
 		int multiplier = 1;
-		if (Input.GetKey(KeyCode.W) == true)
+        if (Input.GetKeyDown(KeyCode.X))
+            GameObject.Instantiate(bullet, transform.position, transform.rotation);
+        if (Input.GetKey(KeyCode.W) == true)
 			multiplier = 3;
 		//var move = new Vector3(1,1,0);
     var move = (((Input.GetKey(KeyCode.W)) ? 1:0) - ((Input.GetKey(KeyCode.S))?1:0)) * transform.up;
