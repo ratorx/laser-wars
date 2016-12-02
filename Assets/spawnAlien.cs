@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class spawnAlien : MonoBehaviour
 {
@@ -7,6 +8,6 @@ public class spawnAlien : MonoBehaviour
 	void Start()
 	{
 		for (int i = 0; i < 10; i++)
-			Instantiate(prefab, new Vector3(i * 2.0f, 0, 0), Quaternion.identity);
+			Instantiate(prefab, new Vector3(Random.Range(-8f, 8f), Random.Range(-5f, 5f), 0), Quaternion.identity);
 	}
 }
