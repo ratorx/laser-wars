@@ -12,7 +12,7 @@ public class LaserBullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += transform.forward*0.1f;
+        transform.position += transform.forward*3f;
         
 	}
 }
