@@ -3,7 +3,7 @@ using System.Collections;
 
 public class player2 : MonoBehaviour
 {
-  public float speed = 5f;
+  public float speed = 2f;
 	public Sprite stop = Resources.Load("sadbadrocket", typeof(Sprite)) as Sprite;
 	public Sprite start = Resources.Load("badrocket", typeof(Sprite)) as Sprite;
   void Update()
