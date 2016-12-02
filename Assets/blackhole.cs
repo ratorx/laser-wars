@@ -6,9 +6,8 @@ public class blackhole : MonoBehaviour
 	{
 		float xMax = 10;
 		float yMax = 5;
-		Vector3 all = new Vector3 (1, -3, 2);
 		// Rotate the object around its local X axis at 1 degree per second
-		transform.Rotate(50 * all * Time.deltaTime );
+		transform.Rotate(10 * Vector3.forward * Time.deltaTime );
 		// Random r = new Random ();
 		float bound = 0.3f;
 		float xmovement = Random.Range(-bound, bound);
