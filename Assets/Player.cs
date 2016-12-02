@@ -24,5 +24,5 @@ public class Player : MonoBehaviour
         //Vector3 v3 = new Vector3(0, Input.GetAxis("Horizontal"), 0);
         transform.Rotate(0.0f , 0.0f, -Input.GetAxis("Horizontal") * speed);
         // transform.Rotate(v3 * speed * Time.deltaTime);
-    }
+    } // Dun goofed.
 }
