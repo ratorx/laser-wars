@@ -6,7 +6,7 @@ public class circleblackhole : MonoBehaviour
 {
 
 	private float RotateSpeed = 0.5f;
-	private float Radius = 2f;
+	private float Radius = 2.5f;
 
 	private Vector2 _centre;
 	private float _angle;
