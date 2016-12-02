@@ -7,8 +7,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        var move = new Vector3(0, Input.GetAxis("Vertical"), 0);
-
+        var move = Input.GetAxis("Vertical") * transform.up;
         // transform.Rotate(10 * Vector3.forward * Time.deltaTime);
         transform.position += move * speed * Time.deltaTime;
 
