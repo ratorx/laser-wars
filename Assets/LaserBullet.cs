@@ -7,11 +7,12 @@ public class LaserBullet : MonoBehaviour {
     public GameObject prefab;
     // Use this for initialization
     void Start () {
-        Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
-    }
+        Destroy(gameObject, 2);
+         }
 	
 	// Update is called once per frame
 	void Update () {
-		
+        transform.position += transform.forward*0.1f;
+        
 	}
 }
